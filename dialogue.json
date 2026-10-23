@@ -1,0 +1,95 @@
+{
+  "version": 2,
+  "dragon": {
+    "Happy": [
+      "Hehe! Que tesouro bonito!",
+      "Mais ouro, mais alegria!",
+      "Tô orgulhoso de você!"
+    ],
+    "Idle": [
+      "Cada moedinha conta.",
+      "Juros compostos são minha magia favorita.",
+      "Tô de olho no seu tesouro!",
+      "Guardar um pouco todo mês vence guardar muito uma vez.",
+      "Já viu quanto rendeu ontem?"
+    ],
+    "Sleeping": [
+      "Zzz… cinco minutinhos…",
+      "Zzz… sonhando com o CDI…"
+    ],
+    "Worried": [
+      "Ai ai… tem conta esperando!",
+      "Bora pagar antes dos juros?"
+    ]
+  },
+  "goblin": [
+    "Eu só seguro a placa.",
+    "Goblin também paga boleto.",
+    "O dragão guarda o ouro. Eu, a placa.",
+    "Juros compostos? Só conheço os do cartão.",
+    "Shh… tô trabalhando.",
+    "Se o CDI cair, não fui eu.",
+    "Já pagou as contas hoje?"
+  ],
+  "screens": {
+    "home": [
+      "Liberdade financeira é quando o rendimento paga os gastos fixos. Bora?",
+      "Sequência de meses guardando: não deixa o fogo apagar!",
+      "Um dia de CDI é pouco. Mil dias é magia.",
+      "As notícias do dia ficam no jornal, ali em cima."
+    ],
+    "pocket": [
+      "Aporte, resgate ou ajuste: me conta o que mudou no baú.",
+      "Saldo diferente do banco? Usa o Ajuste que eu acerto.",
+      "O IR cai com o tempo: depois de 2 anos é só 15%.",
+      "Resgatou? Digita o que caiu na conta, eu desconto os impostos."
+    ],
+    "bills": [
+      "Pagou? Toca no gasto fixo e me diz o valor real.",
+      "No mês seguinte ele volta sozinho, não precisa recadastrar.",
+      "O horário do lembrete fica nos Ajustes.",
+      "Gasto fixo controlado é dragão tranquilo."
+    ],
+    "spending": [
+      "Errei a categoria? Corrige que eu aprendo.",
+      "Compra parcelada no cartão? Cada parcela cai no mês dela.",
+      "Importa o extrato do banco: repetidos eu ignoro.",
+      "Defina um teto: eu aviso aos 80%.",
+      "Cafezinho todo dia também é gasto, hein!"
+    ],
+    "accounts": [
+      "Cartão com dia de fechamento: eu mostro a fatura aberta.",
+      "Carteira também conta: dinheiro vivo some rápido!",
+      "Teto no cartão ajuda a não levar susto na fatura."
+    ],
+    "tools": [
+      "Juros compostos, amortização ou rachar a pizza?",
+      "Antes de decidir, faz a conta. Eu ajudo!"
+    ],
+    "calculator": [
+      "Tempo é o ingrediente secreto dos juros compostos.",
+      "Pouco todo mês vence muito de vez em quando.",
+      "O IR cai com a idade de cada aporte: paciência paga."
+    ],
+    "amortization": [
+      "Price: parcela fixa. SAC: parcela que cai.",
+      "Sobrou o 13º? Testa um extra avulso.",
+      "Amortizar ou investir? Depende dos juros contra o CDI."
+    ],
+    "split": [
+      "Quem pediu a sobremesa paga a sobremesa!",
+      "A taxa de serviço é opcional: você decide.",
+      "Cada parte pode virar um empréstimo para eu lembrar quem falta."
+    ],
+    "news": [
+      "Selic subiu? O CDI vai junto, e suas caixinhas também.",
+      "Relevantes primeiro: o que mexe no seu bolso.",
+      "Notícia boa é inflação baixa e CDI alto."
+    ],
+    "community": [
+      "Achou um bug? Me conta no r/VisionDungeon.",
+      "Tem ideia de skin de dragão? Quero ver!",
+      "As dicas da comunidade aparecem aqui embaixo."
+    ]
+  }
+}
