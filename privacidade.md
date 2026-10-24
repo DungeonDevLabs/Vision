@@ -1,8 +1,10 @@
 # Política de Privacidade do Vision
 
+**Português** · [English](privacy)
+
 _Última atualização: 24 de outubro de 2026_
 
-O Vision é um app de organização financeira pessoal feito por um desenvolvedor independente. Esta política explica quais dados o app usa e para quê.
+O Vision é um app de organização financeira pessoal feito por um desenvolvedor independente, a Dungeon Dev Labs. Esta política explica quais dados o app usa e para quê.
 
 ## Seus dados financeiros ficam no seu aparelho
 

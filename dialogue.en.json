@@ -1,0 +1,118 @@
+{
+  "version": 3,
+  "dragon": {
+    "Happy": [
+      "Hehe! What a beautiful treasure!",
+      "More gold, more joy!",
+      "I'm proud of you!"
+    ],
+    "Idle": [
+      "Every little coin counts.",
+      "Compound interest is my favorite magic.",
+      "I'm keeping an eye on your treasure!",
+      "Saving a little every month beats saving a lot once.",
+      "Did you see how much it earned yesterday?"
+    ],
+    "Sleeping": [
+      "Zzz… five more minutes…",
+      "Zzz… dreaming about the CDI…"
+    ],
+    "Worried": [
+      "Uh-oh… there's a bill waiting!",
+      "Shall we pay it before the interest?"
+    ]
+  },
+  "goblin": [
+    "I just hold the sign.",
+    "Goblins pay bills too.",
+    "The dragon guards the gold. I guard the sign.",
+    "Compound interest? I only know the credit card kind.",
+    "Shh… I'm working.",
+    "If the CDI drops, it wasn't me.",
+    "Have you paid your bills today?"
+  ],
+  "screens": {
+    "home": [
+      "Financial freedom is when the yield pays the fixed expenses. Shall we?",
+      "Months in a row saving: don't let the fire go out!",
+      "One day of CDI is little. A thousand days is magic.",
+      "Today's news is in the newspaper, up there."
+    ],
+    "pocket": [
+      "Deposit, withdrawal or adjustment: tell me what changed in the chest.",
+      "Balance different from the bank? Use Adjust and I'll fix it.",
+      "Income tax drops over time: after 2 years it's only 15%.",
+      "Withdrew? Type what reached your account, I'll take out the taxes."
+    ],
+    "bills": [
+      "Paid? Tap the fixed expense and tell me the real amount.",
+      "Next month it comes back on its own, no need to add it again.",
+      "The reminder time is in Settings.",
+      "Fixed expenses under control make a calm dragon."
+    ],
+    "spending": [
+      "Wrong category? Fix it and I'll learn.",
+      "Installments on the card? Each one falls in its own month.",
+      "Import your bank statement: I skip the repeated ones.",
+      "Set a cap: I'll warn you at 80%.",
+      "A coffee every day is spending too, huh!"
+    ],
+    "accounts": [
+      "Card with a closing day: I show you the open bill.",
+      "The wallet counts too: cash disappears fast!",
+      "A cap on the card helps avoid a scary bill."
+    ],
+    "tools": [
+      "Compound interest, amortization or splitting the pizza?",
+      "Before deciding, do the math. I'll help!"
+    ],
+    "calculator": [
+      "Time is the secret ingredient of compound interest.",
+      "A little every month beats a lot once in a while.",
+      "Income tax drops with each deposit's age: patience pays."
+    ],
+    "amortization": [
+      "Price: fixed installment. SAC: installment that drops.",
+      "Got a bonus? Try a one-time extra.",
+      "Pay it down or invest? It depends on the interest versus the CDI."
+    ],
+    "split": [
+      "Whoever ordered dessert pays for dessert!",
+      "The service fee is optional: you decide.",
+      "Each part can become a loan so I remember who still owes."
+    ],
+    "news": [
+      "Selic went up? The CDI follows, and so do your pockets.",
+      "Relevant first: what affects your pocket.",
+      "Good news is low inflation and a high CDI."
+    ],
+    "community": [
+      "Found a bug? Tell me on r/VisionDungeon.",
+      "Got an idea for a dragon skin? I want to see it!",
+      "Community tips show up down here."
+    ]
+  },
+  "dragons": [
+    {
+      "id": "emerald",
+      "name": "Emerald",
+      "howToUnlock": "Reach a goal",
+      "unlock": "milestone:meta-\\d+-100",
+      "colors": {"l": "e", "d": "c", "h": "j", "p": "a", "q": "o"}
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "howToUnlock": "The treasure earns R$ 100 in total",
+      "unlock": "milestone:acumulado-10000",
+      "colors": {"l": "f", "d": "u", "h": "v", "p": "a", "q": "o"}
+    },
+    {
+      "id": "ice",
+      "name": "Ice",
+      "howToUnlock": "The treasure earns R$ 1,000 in total",
+      "unlock": "milestone:acumulado-100000",
+      "colors": {"l": "s", "d": "i", "h": "z", "p": "b", "q": "z"}
+    }
+  ]
+}

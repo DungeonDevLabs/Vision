@@ -55,16 +55,19 @@ def gif(path, rows_list, fps, colors, swap):
 
 def main():
     data = json.loads(read('dialogue.json'))
+    english = {d['id']: d for d in json.loads(read('dialogue.en.json')).get('dragons', [])}
     colors = palette()
     rows_list, fps = frames(read('sprites/dragon_idle.txt'))
     dragons = [{'id': 'purple', 'name': 'Ametista', 'howToUnlock': 'Seu primeiro guardião', 'colors': {}}] + data.get('dragons', [])
+    english['purple'] = {'name': 'Amethyst', 'howToUnlock': 'Your first guardian'}
     os.makedirs(os.path.join(ROOT, 'gallery'), exist_ok=True)
     cells = []
     for d in dragons:
         swap = {k: v for k, v in d.get('colors', {}).items() if k in colors and v in colors}
         gif(os.path.join(ROOT, 'gallery', f"{d['id']}.gif"), rows_list, fps, colors, swap)
-        cells.append(f'<td align="center"><img src="gallery/{d["id"]}.gif" width="96" alt="{d["name"]}"><br>'
-                     f'<b>{d["name"]}</b><br><sub>{d["howToUnlock"]}</sub></td>')
+        en = english.get(d['id'], d)
+        cells.append(f'<td align="center"><img src="gallery/{d["id"]}.gif" width="96" alt="{en["name"]}"><br>'
+                     f'<b>{en["name"]}</b> · {d["name"]}<br><sub>{en["howToUnlock"]}</sub></td>')
     rows = ['<tr>' + ''.join(cells[i:i + 4]) + '</tr>' for i in range(0, len(cells), 4)]
     table = f'{START}\n<table>\n' + '\n'.join(rows) + f'\n</table>\n{END}'
     readme = read('README.md')
