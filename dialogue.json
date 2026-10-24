@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "dragon": {
     "Happy": [
       "Hehe! Que tesouro bonito!",
@@ -91,5 +91,46 @@
       "Tem ideia de skin de dragão? Quero ver!",
       "As dicas da comunidade aparecem aqui embaixo."
     ]
-  }
+  },
+  "dragons": [
+    {
+      "id": "emerald",
+      "name": "Esmeralda",
+      "howToUnlock": "Bata uma meta",
+      "unlock": "milestone:meta-\\d+-100",
+      "colors": {
+        "l": "e",
+        "d": "c",
+        "h": "j",
+        "p": "a",
+        "q": "o"
+      }
+    },
+    {
+      "id": "ruby",
+      "name": "Rubi",
+      "howToUnlock": "O tesouro render R$ 100 no total",
+      "unlock": "milestone:acumulado-10000",
+      "colors": {
+        "l": "f",
+        "d": "u",
+        "h": "v",
+        "p": "a",
+        "q": "o"
+      }
+    },
+    {
+      "id": "ice",
+      "name": "Gelo",
+      "howToUnlock": "O tesouro render R$ 1.000 no total",
+      "unlock": "milestone:acumulado-100000",
+      "colors": {
+        "l": "s",
+        "d": "i",
+        "h": "z",
+        "p": "b",
+        "q": "z"
+      }
+    }
+  ]
 }

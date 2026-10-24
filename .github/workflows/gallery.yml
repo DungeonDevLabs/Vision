@@ -1,0 +1,28 @@
+name: Dragon gallery
+
+# Redraws gallery/*.gif and the table in README.md whenever a dragon changes in dialogue.json.
+on:
+  push:
+    branches: [main]
+    paths: [dialogue.json, sprites/**, tools/gallery.py]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  gallery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow==11.0.0
+      - run: python tools/gallery.py
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
+          git add README.md gallery
+          git diff --cached --quiet || (git commit -m "Update dragon gallery" && git push)
