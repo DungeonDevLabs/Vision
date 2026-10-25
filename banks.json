@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "sets": {
+    "compras": [
+      {
+        "regex": "(?i)^(?!.*(?:negad|recusad|n[aã]o aprovad|n[aã]o autorizad|estornad|cancelad|agendad)).*?compra de R\\$\\s?(?<valor>\\d{1,3}(?:\\.\\d{3})*,\\d{2}) aprovada em (?<loja>.+?)(?: para o cart[aã]o.*?)?[.!]?$"
+      },
+      {
+        "regex": "(?i)^(?!.*(?:negad|recusad|n[aã]o aprovad|n[aã]o autorizad|estornad|cancelad|agendad)).*?compra.*?R\\$\\s?(?<valor>\\d{1,3}(?:\\.\\d{3})*,\\d{2}).*?\\b(?:em|no|na)\\s+(?<loja>[^\\n,.]+?)(?:\\s+(?:para o|no) cart[aã]o.*?)?[.!]?$"
+      },
+      {
+        "regex": "(?i)^(?!.*(?:negad|recusad|n[aã]o aprovad|n[aã]o autorizad|estornad|cancelad|agendad)).*?(?:compra|pagamento|d[ée]bito).*?R\\$\\s?(?<valor>\\d{1,3}(?:\\.\\d{3})*,\\d{2})"
+      }
+    ],
+    "pix": [
+      {
+        "regex": "(?i)^(?!.*(?:negad|recusad|n[aã]o aprovad|n[aã]o autorizad|estornad|cancelad|agendad)).*?(?:pix|transfer[eê]ncia)\\s+(?:enviad[oa]|realizad[oa]|feit[oa]).*?R\\$\\s?(?<valor>\\d{1,3}(?:\\.\\d{3})*,\\d{2})(?:.*?\\bpara\\s+(?<loja>[^\\n,.]+))?"
+      },
+      {
+        "regex": "(?i)^(?!.*(?:negad|recusad|n[aã]o aprovad|n[aã]o autorizad|estornad|cancelad|agendad)).*?voc[eê] (?:enviou|pagou|transferiu)\\s+R\\$\\s?(?<valor>\\d{1,3}(?:\\.\\d{3})*,\\d{2})(?:.*?\\bpara\\s+(?<loja>[^\\n,.]+))?"
+      },
+      {
+        "regex": "(?i)^(?!.*(?:negad|recusad|n[aã]o aprovad|n[aã]o autorizad|estornad|cancelad|agendad)).*?(?:voc[eê] recebeu|recebid[oa]|caiu na sua conta).*?R\\$\\s?(?<valor>\\d{1,3}(?:\\.\\d{3})*,\\d{2})(?:.*?\\bde\\s+(?<loja>[^\\n,.]+))?",
+        "income": true
+      }
+    ]
+  },
+  "templates": [
+    {
+      "id": "nubank",
+      "name": "Nubank",
+      "packages": [
+        "com.nu.production"
+      ],
+      "use": [
+        "compras",
+        "pix"
+      ]
+    },
+    {
+      "id": "inter",
+      "name": "Inter",
+      "packages": [
+        "br.com.intermedium"
+      ],
+      "use": [
+        "compras",
+        "pix"
+      ]
+    },
+    {
+      "id": "itau",
+      "name": "Itaú",
+      "packages": [
+        "com.itau",
+        "com.itau.empresas"
+      ],
+      "use": [
+        "compras",
+        "pix"
+      ]
+    },
+    {
+      "id": "bradesco",
+      "name": "Bradesco",
+      "packages": [
+        "com.bradesco"
+      ],
+      "use": [
+        "compras",
+        "pix"
+      ]
+    },
+    {
+      "id": "c6",
+      "name": "C6 Bank",
+      "packages": [
+        "com.c6bank.app"
+      ],
+      "use": [
+        "compras",
+        "pix"
+      ]
+    },
+    {
+      "id": "santander",
+      "name": "Santander",
+      "packages": [
+        "com.santander.app"
+      ],
+      "use": [
+        "compras",
+        "pix"
+      ]
+    },
+    {
+      "id": "bb",
+      "name": "Banco do Brasil",
+      "packages": [
+        "br.com.bb.android"
+      ],
+      "use": [
+        "compras",
+        "pix"
+      ]
+    },
+    {
+      "id": "caixa",
+      "name": "Caixa",
+      "packages": [
+        "br.com.gabba.Caixa"
+      ],
+      "use": [
+        "compras",
+        "pix"
+      ]
+    },
+    {
+      "id": "picpay",
+      "name": "PicPay",
+      "packages": [
+        "com.picpay"
+      ],
+      "use": [
+        "compras",
+        "pix"
+      ]
+    },
+    {
+      "id": "mercadopago",
+      "name": "Mercado Pago",
+      "packages": [
+        "com.mercadopago.wallet"
+      ],
+      "use": [
+        "compras",
+        "pix"
+      ]
+    },
+    {
+      "id": "neon",
+      "name": "Neon",
+      "packages": [
+        "br.com.neon"
+      ],
+      "use": [
+        "compras",
+        "pix"
+      ]
+    },
+    {
+      "id": "pagbank",
+      "name": "PagBank",
+      "packages": [
+        "br.com.uol.ps.myaccount"
+      ],
+      "use": [
+        "compras",
+        "pix"
+      ]
+    }
+  ]
+}

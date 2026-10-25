@@ -2,7 +2,7 @@
 
 [Português](privacidade) · **English**
 
-_Last updated: October 24, 2026_
+_Last updated: October 25, 2026_
 
 Vision is a personal finance app made by an independent developer, Dungeon Dev Labs. This policy explains which data the app uses and why.
 
@@ -18,6 +18,10 @@ Everything you enter is saved **only on your phone**, in a local database:
 
 Vision has **no account, login or server of its own**, and doesn't send this data anywhere.
 
+## Bank notifications (optional)
+
+If you give Vision access to notifications and choose the bank of an account or card, Vision reads **only that bank's notifications** to turn purchases and Pix into entries. Other apps' notifications are ignored right away. The text is read on the device and **sent nowhere**. The ones the app doesn't understand stay in a local list (the last 10) you can clear in Settings. To stop, turn off Vision's access in Android's notification settings.
+
 ## Backup
 
 - **File:** you can export a backup file and save it wherever you want. Vision doesn't read or send this file without your action.
@@ -31,6 +35,7 @@ Vision uses the internet only to **download** public information, without sendin
 - **CDI rate:** public series from the Central Bank of Brazil (api.bcb.gov.br), used to calculate the chests' yield.
 - **News:** public headlines (RSS) from Valor Econômico and Money Times. Tapping a story opens it in your browser, on the source's site.
 - **Mascot lines and dragons:** a public text file on GitHub with the lines and the dragons.
+- **Bank notification templates:** a public file on GitHub (banks.json) that says how to read each bank's notifications.
 - **Community:** public tips from r/VisionDungeon on Reddit. Tapping to post opens Reddit in your browser or its app, under Reddit's privacy rules.
 
 ## Ads (Google AdMob)

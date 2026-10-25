@@ -2,7 +2,7 @@
 
 **Português** · [English](privacy)
 
-_Última atualização: 24 de outubro de 2026_
+_Última atualização: 25 de outubro de 2026_
 
 O Vision é um app de organização financeira pessoal feito por um desenvolvedor independente, a Dungeon Dev Labs. Esta política explica quais dados o app usa e para quê.
 
@@ -18,6 +18,10 @@ Tudo o que você cadastra fica salvo **só no seu celular**, em um banco de dado
 
 O Vision **não tem conta, login nem servidor próprio**, e não envia esses dados para nenhum lugar.
 
+## Notificações do banco (opcional)
+
+Se você liberar o acesso às notificações e escolher o banco de uma conta ou cartão, o Vision lê **só as notificações desse banco** para transformar compras e Pix em lançamentos. As notificações de outros apps são ignoradas na hora. O texto é lido no aparelho e **não é enviado para nenhum lugar**. As que o app não entende ficam numa lista local (as últimas 10), que você pode apagar em Ajustes. Para parar, desligue o acesso do Vision nas configurações de notificação do Android.
+
 ## Backup
 
 - **Arquivo:** você pode exportar um arquivo de backup e salvar onde quiser. O Vision não lê nem envia esse arquivo sem a sua ação.
@@ -31,6 +35,7 @@ O Vision usa a internet só para **baixar** informações públicas, sem enviar 
 - **Taxa CDI:** série pública do Banco Central do Brasil (api.bcb.gov.br), usada para calcular o rendimento dos baús.
 - **Notícias:** manchetes públicas (RSS) do Valor Econômico e do Money Times. Ao tocar numa notícia, ela abre no seu navegador, no site da fonte.
 - **Falas e dragões do mascote:** um arquivo de texto público no GitHub com as frases e os dragões.
+- **Modelos de notificação dos bancos:** um arquivo público no GitHub (banks.json) que diz como ler as notificações de cada banco.
 - **Comunidade:** as dicas públicas do r/VisionDungeon no Reddit. Ao tocar para postar, o Reddit abre no navegador ou no app dele, com as regras de privacidade do Reddit.
 
 ## Anúncios (Google AdMob)
