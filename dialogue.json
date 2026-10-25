@@ -82,7 +82,7 @@
       "Cada parte pode virar um empréstimo para eu lembrar quem falta."
     ],
     "news": [
-      "Selic subiu? O CDI vai junto, e suas caixinhas também.",
+      "Selic subiu? O CDI vai junto, e seus baús também.",
       "Relevantes primeiro: o que mexe no seu bolso.",
       "Notícia boa é inflação baixa e CDI alto."
     ],
@@ -131,6 +131,136 @@
         "p": "b",
         "q": "z"
       }
+    }
+  ],
+  "achievements": [
+    {
+      "id": "primeiro-bau",
+      "name": "Primeiro baú",
+      "description": "Criar o seu primeiro baú",
+      "kind": "baus",
+      "value": 1,
+      "icon": "📦"
+    },
+    {
+      "id": "primeiras-moedas",
+      "name": "Primeiras moedas",
+      "description": "O tesouro render R$ 10",
+      "kind": "rendimento",
+      "value": 1000,
+      "icon": "🪙"
+    },
+    {
+      "id": "cofre-cheio",
+      "name": "Cofre cheio",
+      "description": "Ter 3 baús",
+      "kind": "baus",
+      "value": 3,
+      "icon": "🗝️"
+    },
+    {
+      "id": "constancia",
+      "name": "Constância",
+      "description": "Guardar 3 meses seguidos",
+      "kind": "sequencia",
+      "value": 3,
+      "icon": "🔥"
+    },
+    {
+      "id": "ano-de-ouro",
+      "name": "Ano de ouro",
+      "description": "Guardar 12 meses seguidos",
+      "kind": "sequencia",
+      "value": 12,
+      "icon": "🏅"
+    },
+    {
+      "id": "mil-reais",
+      "name": "Primeiro milhar",
+      "description": "Ter R$ 1.000 nos baús",
+      "kind": "patrimonio",
+      "value": 100000,
+      "icon": "💰"
+    },
+    {
+      "id": "dez-mil",
+      "name": "Tesouro de dragão",
+      "description": "Ter R$ 10.000 nos baús",
+      "kind": "patrimonio",
+      "value": 1000000,
+      "icon": "🐉"
+    },
+    {
+      "id": "cem-mil",
+      "name": "Lenda da masmorra",
+      "description": "Ter R$ 100.000 nos baús",
+      "kind": "patrimonio",
+      "value": 10000000,
+      "icon": "👑"
+    },
+    {
+      "id": "meta-batida",
+      "name": "Missão cumprida",
+      "description": "Bater uma meta",
+      "kind": "metas",
+      "value": 1,
+      "icon": "🎯"
+    },
+    {
+      "id": "tres-metas",
+      "name": "Caçador de metas",
+      "description": "Bater 3 metas",
+      "kind": "metas",
+      "value": 3,
+      "icon": "🏹"
+    },
+    {
+      "id": "desejo-realizado",
+      "name": "Desejo realizado",
+      "description": "Comprar um desejo só com o rendimento",
+      "kind": "desejos",
+      "value": 1,
+      "icon": "🎁"
+    },
+    {
+      "id": "reserva-3",
+      "name": "Escudo de 3 meses",
+      "description": "A reserva cobrir 3 meses de gastos fixos",
+      "kind": "reserva",
+      "value": 3,
+      "icon": "🛡️"
+    },
+    {
+      "id": "reserva-6",
+      "name": "Muralha",
+      "description": "A reserva cobrir 6 meses de gastos fixos",
+      "kind": "reserva",
+      "value": 6,
+      "icon": "🏰"
+    },
+    {
+      "id": "liberdade-10",
+      "name": "Primeiro passo livre",
+      "description": "O rendimento pagar 10% dos gastos fixos",
+      "kind": "liberdade",
+      "value": 10,
+      "icon": "🌱"
+    },
+    {
+      "id": "liberdade-50",
+      "name": "Meio caminho",
+      "description": "O rendimento pagar 50% dos gastos fixos",
+      "kind": "liberdade",
+      "value": 50,
+      "icon": "⛰️"
+    },
+    {
+      "id": "liberdade-100",
+      "name": "Liberdade!",
+      "description": "O rendimento pagar todos os gastos fixos",
+      "kind": "liberdade",
+      "value": 100,
+      "icon": "🦅"
     }
   ]
 }

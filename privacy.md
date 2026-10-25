@@ -9,7 +9,7 @@ Vision is a personal finance app made by an independent developer, Dungeon Dev L
 ## Your financial data stays on your device
 
 Everything you enter is saved **only on your phone**, in a local database:
-- pockets (savings);
+- chests (your savings);
 - deposits and withdrawals;
 - fixed expenses and payments;
 - spending tracker: accounts, cards, entries, categories, caps and statements you import;
@@ -28,7 +28,7 @@ Vision's use of information received from Google APIs adheres to the [Google API
 ## What the app fetches from the internet
 
 Vision uses the internet only to **download** public information, without sending your data:
-- **CDI rate:** public series from the Central Bank of Brazil (api.bcb.gov.br), used to calculate the pockets' yield.
+- **CDI rate:** public series from the Central Bank of Brazil (api.bcb.gov.br), used to calculate the chests' yield.
 - **News:** public headlines (RSS) from Valor Econômico and Money Times. Tapping a story opens it in your browser, on the source's site.
 - **Mascot lines and dragons:** a public text file on GitHub with the lines and the dragons.
 - **Community:** public tips from r/VisionDungeon on Reddit. Tapping to post opens Reddit in your browser or its app, under Reddit's privacy rules.

@@ -40,6 +40,17 @@ Add it to `"dragons"` in **both** files, with the same `id` and `colors` and the
   `l` body, `d` shadow, `h` highlight, `p`/`q` wings. Only palette characters are accepted.
 - The gallery above is redrawn by GitHub Actions when the files change.
 
+## A new achievement (no app update)
+Add it to `"achievements"` in **both** files, with the same `id`, `kind` and `value`:
+```json
+{"id": "five-chests", "name": "Hoarder", "description": "Have 5 chests", "kind": "baus", "value": 5, "icon": "📦"}
+```
+- `id`: lowercase letters, digits and `-`, unique. `name` up to 30 characters, `description` up to 80.
+- `kind` and `value`: `rendimento` (net yield since the start, in cents), `patrimonio` (worth of the chests, in cents),
+  `sequencia` (months in a row saving), `liberdade` (% of the fixed expenses the yield pays), `reserva` (months the
+  emergency fund covers), `metas` (goals reached), `baus` (chests created), `desejos` (wishes bought).
+- Once reached it stays unlocked. A dragon can unlock with it: `"unlock": "milestone:conquista-five-chests"`.
+
 ## Community
 Bugs, ideas, dragon skins and tips: [r/VisionDungeon](https://www.reddit.com/r/VisionDungeon).
 
@@ -72,6 +83,16 @@ Adicione em `"dragons"` nos **dois** arquivos, com o mesmo `id` e `colors` e o t
 - `unlock`: `"video"` (vídeo premiado) ou `"milestone:<regex>"` sobre as chaves de conquista.
 - `colors`: qual cor da paleta (`sprites/palette.txt`) troca qual no dragão roxo: `l` corpo, `d` sombra, `h` brilho, `p`/`q` asas.
 - A galeria acima é redesenhada pelo GitHub Actions quando os arquivos mudam.
+
+### Uma conquista nova (sem atualizar o app)
+Adicione em `"achievements"` nos **dois** arquivos, com o mesmo `id`, `kind` e `value`:
+```json
+{"id": "cinco-baus", "name": "Acumulador", "description": "Ter 5 baús", "kind": "baus", "value": 5, "icon": "📦"}
+```
+- `kind` e `value`: `rendimento` (rendimento líquido desde o começo, em centavos), `patrimonio` (valor dos baús, em centavos),
+  `sequencia` (meses seguidos guardando), `liberdade` (% dos gastos fixos que o rendimento paga), `reserva` (meses que a
+  reserva cobre), `metas` (metas batidas), `baus` (baús criados), `desejos` (desejos comprados).
+- Depois de liberada, fica liberada. Um dragão pode depender dela: `"unlock": "milestone:conquista-cinco-baus"`.
 
 ### Comunidade
 Bugs, ideias, skins de dragão e dicas: [r/VisionDungeon](https://www.reddit.com/r/VisionDungeon).

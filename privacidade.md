@@ -9,7 +9,7 @@ O Vision é um app de organização financeira pessoal feito por um desenvolvedo
 ## Seus dados financeiros ficam no seu aparelho
 
 Tudo o que você cadastra fica salvo **só no seu celular**, em um banco de dados local:
-- caixinhas;
+- baús (suas aplicações);
 - aportes e resgates;
 - gastos fixos e pagamentos;
 - controle de gastos: contas, cartões, lançamentos, categorias, tetos e extratos que você importar;
@@ -28,7 +28,7 @@ O uso de dados recebidos das APIs do Google segue a [Política de Dados do Usuá
 ## O que o app busca na internet
 
 O Vision usa a internet só para **baixar** informações públicas, sem enviar seus dados:
-- **Taxa CDI:** série pública do Banco Central do Brasil (api.bcb.gov.br), usada para calcular o rendimento das caixinhas.
+- **Taxa CDI:** série pública do Banco Central do Brasil (api.bcb.gov.br), usada para calcular o rendimento dos baús.
 - **Notícias:** manchetes públicas (RSS) do Valor Econômico e do Money Times. Ao tocar numa notícia, ela abre no seu navegador, no site da fonte.
 - **Falas e dragões do mascote:** um arquivo de texto público no GitHub com as frases e os dragões.
 - **Comunidade:** as dicas públicas do r/VisionDungeon no Reddit. Ao tocar para postar, o Reddit abre no navegador ou no app dele, com as regras de privacidade do Reddit.
