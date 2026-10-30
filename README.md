@@ -19,6 +19,7 @@ This repository holds only the files the app reads from the internet; the app's 
 |---|---|
 | `dialogue.json` / `dialogue.en.json` | Dragon lines (by mood and by screen), the ad goblin's lines and the dragons catalog, in Portuguese and English. The app downloads its language's file at most every 12 h; an invalid file is ignored and the previous one stays. |
 | `banks.json` | How to read each bank's notifications (regex) to log expenses on their own. Same 12 h and same rule for invalid files. |
+| `prints.json` | Extra words for reading screenshots, added to the app's own: `receiptLabels` (a receipt's labels, e.g. "valor pago"), `categories` (names printed over a purchase, never its description), `noise` (a line with it is never a transaction, e.g. "antecipar fatura"), `headings` (a receipt's title, never the description). Plain words, case doesn't matter, up to 60 characters each and 500 in total. Same 12 h and same rule for invalid files. |
 | `sprites/` | The purple dragon and the palette, used to draw the gallery above. |
 | `privacidade.md` / `privacy.md` | Privacy policy (link required by the Play Store). |
 
@@ -51,6 +52,10 @@ Add it to `"achievements"` in **both** files, with the same `id`, `kind` and `va
   `sequencia` (months in a row saving), `liberdade` (% of the fixed expenses the yield pays), `reserva` (months the
   emergency fund covers), `metas` (goals reached), `baus` (chests created), `desejos` (wishes bought).
 - Once reached it stays unlocked. A dragon can unlock with it: `"unlock": "milestone:conquista-five-chests"`.
+- Each medal is drawn in pixel art: `"tier"` = its metal (`ferro`, `bronze`, `prata`, `ouro`, easiest first) and
+  `"symbol"` = what's engraved on it. New metals go in `"medalTiers"` (`id`, `name`, colors `main`, `light`, `dark`,
+  `ribbon` as `#RRGGBB`) and new symbols in `"medalSymbols"`: 7 rows of 7 characters, `#` engraved, `.` plain.
+  Both files must have the same metals and symbols (only the names change).
 
 ## Bank notifications (banks.json)
 Each template lists the bank's app ids (`packages`) and regexes over the notification's title + text. Group `valor` is the
@@ -79,6 +84,7 @@ Este repositório tem só os arquivos que o app lê da internet; o código do ap
 |---|---|
 | `dialogue.json` / `dialogue.en.json` | Falas do dragão (por humor e por tela), do goblin do anúncio e o catálogo de dragões, em português e inglês. O app baixa o do seu idioma no máximo a cada 12 h; arquivo inválido é ignorado e o anterior continua. |
 | `banks.json` | Como ler as notificações de cada banco (regex) para lançar gastos sozinho. Mesmas 12 h e mesma regra para arquivo inválido. |
+| `prints.json` | Palavras extras para ler prints, somadas às do app: `receiptLabels` (rótulos de comprovante, ex.: "valor pago"), `categories` (nomes impressos acima da compra, nunca a descrição), `noise` (linha com isso nunca é lançamento, ex.: "antecipar fatura"), `headings` (título de comprovante, nunca a descrição). Palavras simples, sem diferença de maiúsculas, até 60 caracteres cada e 500 no total. Mesmas 12 h e mesma regra para arquivo inválido. |
 | `sprites/` | O dragão roxo e a paleta, usados para desenhar a galeria acima. |
 | `privacidade.md` / `privacy.md` | Política de privacidade (link exigido pela Play Store). |
 
@@ -107,6 +113,10 @@ Adicione em `"achievements"` nos **dois** arquivos, com o mesmo `id`, `kind` e `
   `sequencia` (meses seguidos guardando), `liberdade` (% dos gastos fixos que o rendimento paga), `reserva` (meses que a
   reserva cobre), `metas` (metas batidas), `baus` (baús criados), `desejos` (desejos comprados).
 - Depois de liberada, fica liberada. Um dragão pode depender dela: `"unlock": "milestone:conquista-cinco-baus"`.
+- Cada medalha é desenhada em pixel: `"tier"` = o metal (`ferro`, `bronze`, `prata`, `ouro`, do mais fácil ao mais difícil)
+  e `"symbol"` = o símbolo gravado. Metais novos vão em `"medalTiers"` (`id`, `name`, cores `main`, `light`, `dark`,
+  `ribbon` em `#RRGGBB`) e símbolos novos em `"medalSymbols"`: 7 linhas de 7 caracteres, `#` gravado, `.` liso.
+  Os dois arquivos precisam ter os mesmos metais e símbolos (só os nomes mudam).
 
 ### Notificações dos bancos (banks.json)
 Cada modelo tem os ids dos apps do banco (`packages`) e regex sobre o título + texto da notificação. O grupo `valor` é o

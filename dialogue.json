@@ -69,7 +69,10 @@
     "calculator": [
       "Tempo é o ingrediente secreto dos juros compostos.",
       "Pouco todo mês vence muito de vez em quando.",
-      "O IR cai com a idade de cada aporte: paciência paga."
+      "O IR cai com a idade de cada aporte: paciência paga.",
+      "Renda passiva é o dinheiro trabalhando por você. Rendendo 1% ao mês, R$ 100 mil pagam R$ 1.000.",
+      "A conta inverte isso: quanto você quer receber ÷ quanto rende por mês = quanto precisa ter.",
+      "Reinvestir os rendimentos é o segredo: o que rendeu também passa a render, e o tempo encolhe."
     ],
     "amortization": [
       "Price: parcela fixa. SAC: parcela que cai.",
@@ -90,6 +93,28 @@
       "Achou um bug? Me conta no r/VisionDungeon.",
       "Tem ideia de skin de dragão? Quero ver!",
       "As dicas da comunidade aparecem aqui embaixo."
+    ],
+    "fii_fixed": [
+      "Pense no FII como um aluguel que cai na conta todo mês, sem IR. A renda fixa rende pelo CDI, mas paga IR.",
+      "Aqui eu ponho os dois no mesmo idioma: quanto cada um rende por mês, já sem imposto.",
+      "Se o FII paga menos que o \"empate\", a renda fixa renderia mais, e sem o sobe e desce da cota.",
+      "Rendimento passado não garante o futuro: imóvel vazio ou inquilino que não paga derruba o FII.",
+      "Na renda fixa o IR cai com o tempo: 22,5% até 6 meses, 15% depois de 2 anos. Por isso pergunto o prazo.",
+      "LCI e LCA também são isentas, como o FII para pessoa física. Compare isento com isento!"
+    ],
+    "magic_number": [
+      "Bola de neve: é quando o rendimento de um mês compra uma cota nova sozinho, sem tirar do bolso.",
+      "É como uma árvore que dá uma semente nova todo mês. Quanto mais árvores, mais rápido o pomar cresce.",
+      "A conta é preço da cota ÷ rendimento por cota. Cota de R$ 100 pagando R$ 1? São 100 cotas.",
+      "Se o rendimento cair ou a cota subir, a conta muda. Use como meta, não como certeza.",
+      "A bola de neve já gira? Cada cota nova aumenta o rendimento, e a bola de neve acelera."
+    ],
+    "price_ceiling": [
+      "Preço teto é um limite: até quanto pagar por uma ação para ela ainda fazer sentido por um critério.",
+      "Bazin queria 6% ao ano em dividendos. Se a empresa pagou R$ 3 por ação, ele pagaria até R$ 50.",
+      "Graham juntava lucro e patrimônio: no máximo 15 vezes o lucro e 1,5 vez o patrimônio.",
+      "São métodos antigos e simples. Eles não sabem o futuro da empresa: use como ponto de partida.",
+      "Abaixo do teto não quer dizer \"compre\", acima não quer dizer \"venda\". É uma régua, não uma ordem."
     ]
   },
   "dragons": [
@@ -140,7 +165,9 @@
       "description": "Criar o seu primeiro baú",
       "kind": "baus",
       "value": 1,
-      "icon": "📦"
+      "icon": "📦",
+      "tier": "ferro",
+      "symbol": "bau"
     },
     {
       "id": "primeiras-moedas",
@@ -148,7 +175,9 @@
       "description": "O tesouro render R$ 10",
       "kind": "rendimento",
       "value": 1000,
-      "icon": "🪙"
+      "icon": "🪙",
+      "tier": "ferro",
+      "symbol": "moeda"
     },
     {
       "id": "cofre-cheio",
@@ -156,7 +185,9 @@
       "description": "Ter 3 baús",
       "kind": "baus",
       "value": 3,
-      "icon": "🗝️"
+      "icon": "🗝️",
+      "tier": "bronze",
+      "symbol": "chave"
     },
     {
       "id": "constancia",
@@ -164,7 +195,9 @@
       "description": "Guardar 3 meses seguidos",
       "kind": "sequencia",
       "value": 3,
-      "icon": "🔥"
+      "icon": "🔥",
+      "tier": "bronze",
+      "symbol": "fogo"
     },
     {
       "id": "ano-de-ouro",
@@ -172,7 +205,9 @@
       "description": "Guardar 12 meses seguidos",
       "kind": "sequencia",
       "value": 12,
-      "icon": "🏅"
+      "icon": "🏅",
+      "tier": "ouro",
+      "symbol": "estrela"
     },
     {
       "id": "mil-reais",
@@ -180,7 +215,9 @@
       "description": "Ter R$ 1.000 nos baús",
       "kind": "patrimonio",
       "value": 100000,
-      "icon": "💰"
+      "icon": "💰",
+      "tier": "bronze",
+      "symbol": "saco"
     },
     {
       "id": "dez-mil",
@@ -188,7 +225,9 @@
       "description": "Ter R$ 10.000 nos baús",
       "kind": "patrimonio",
       "value": 1000000,
-      "icon": "🐉"
+      "icon": "🐉",
+      "tier": "prata",
+      "symbol": "dragao"
     },
     {
       "id": "cem-mil",
@@ -196,7 +235,9 @@
       "description": "Ter R$ 100.000 nos baús",
       "kind": "patrimonio",
       "value": 10000000,
-      "icon": "👑"
+      "icon": "👑",
+      "tier": "ouro",
+      "symbol": "coroa"
     },
     {
       "id": "meta-batida",
@@ -204,7 +245,9 @@
       "description": "Bater uma meta",
       "kind": "metas",
       "value": 1,
-      "icon": "🎯"
+      "icon": "🎯",
+      "tier": "bronze",
+      "symbol": "alvo"
     },
     {
       "id": "tres-metas",
@@ -212,15 +255,19 @@
       "description": "Bater 3 metas",
       "kind": "metas",
       "value": 3,
-      "icon": "🏹"
+      "icon": "🏹",
+      "tier": "prata",
+      "symbol": "alvo"
     },
     {
       "id": "desejo-realizado",
-      "name": "Desejo realizado",
-      "description": "Comprar um desejo só com o rendimento",
+      "name": "Recompensa resgatada",
+      "description": "Resgatar uma recompensa juntada no baú",
       "kind": "desejos",
       "value": 1,
-      "icon": "🎁"
+      "icon": "🎁",
+      "tier": "bronze",
+      "symbol": "presente"
     },
     {
       "id": "reserva-3",
@@ -228,7 +275,9 @@
       "description": "A reserva cobrir 3 meses de gastos fixos",
       "kind": "reserva",
       "value": 3,
-      "icon": "🛡️"
+      "icon": "🛡️",
+      "tier": "prata",
+      "symbol": "escudo"
     },
     {
       "id": "reserva-6",
@@ -236,7 +285,9 @@
       "description": "A reserva cobrir 6 meses de gastos fixos",
       "kind": "reserva",
       "value": 6,
-      "icon": "🏰"
+      "icon": "🏰",
+      "tier": "ouro",
+      "symbol": "castelo"
     },
     {
       "id": "liberdade-10",
@@ -244,7 +295,9 @@
       "description": "O rendimento pagar 10% dos gastos fixos",
       "kind": "liberdade",
       "value": 10,
-      "icon": "🌱"
+      "icon": "🌱",
+      "tier": "ferro",
+      "symbol": "broto"
     },
     {
       "id": "liberdade-50",
@@ -252,7 +305,9 @@
       "description": "O rendimento pagar 50% dos gastos fixos",
       "kind": "liberdade",
       "value": 50,
-      "icon": "⛰️"
+      "icon": "⛰️",
+      "tier": "prata",
+      "symbol": "montanha"
     },
     {
       "id": "liberdade-100",
@@ -260,7 +315,180 @@
       "description": "O rendimento pagar todos os gastos fixos",
       "kind": "liberdade",
       "value": 100,
-      "icon": "🦅"
+      "icon": "🦅",
+      "tier": "ouro",
+      "symbol": "asas"
     }
-  ]
+  ],
+  "medalTiers": [
+    {
+      "id": "ferro",
+      "name": "Ferro",
+      "main": "#8A8F98",
+      "light": "#C9CED6",
+      "dark": "#464B53",
+      "ribbon": "#5B6472"
+    },
+    {
+      "id": "bronze",
+      "name": "Bronze",
+      "main": "#C27A3A",
+      "light": "#EBAE72",
+      "dark": "#6E3D1A",
+      "ribbon": "#B0443A"
+    },
+    {
+      "id": "prata",
+      "name": "Prata",
+      "main": "#BCC5D0",
+      "light": "#F4F7FA",
+      "dark": "#68727F",
+      "ribbon": "#3D6FB8"
+    },
+    {
+      "id": "ouro",
+      "name": "Ouro",
+      "main": "#F2B233",
+      "light": "#FFE68C",
+      "dark": "#94620C",
+      "ribbon": "#C8382E"
+    }
+  ],
+  "medalSymbols": {
+    "bau": [
+      ".......",
+      ".#####.",
+      "#.....#",
+      "###.###",
+      "#..#..#",
+      "#.....#",
+      "#######"
+    ],
+    "moeda": [
+      "..###..",
+      ".#...#.",
+      "#..#..#",
+      "#.###.#",
+      "#..#..#",
+      ".#...#.",
+      "..###.."
+    ],
+    "chave": [
+      ".......",
+      ".##....",
+      "#..####",
+      "#..#.#.",
+      ".##..#.",
+      ".......",
+      "......."
+    ],
+    "fogo": [
+      "...#...",
+      "..##...",
+      "..###..",
+      ".#.###.",
+      ".#..##.",
+      ".#...#.",
+      "..###.."
+    ],
+    "estrela": [
+      "...#...",
+      "...#...",
+      "#######",
+      ".#####.",
+      "..###..",
+      ".##.##.",
+      ".#...#."
+    ],
+    "saco": [
+      "..###..",
+      "...#...",
+      ".#####.",
+      "#..#..#",
+      "#.###.#",
+      "#..#..#",
+      ".#####."
+    ],
+    "dragao": [
+      "#...#..",
+      "##.##..",
+      ".####..",
+      ".#.###.",
+      ".#####.",
+      "...####",
+      ".....#."
+    ],
+    "coroa": [
+      ".......",
+      "#..#..#",
+      "##.#.##",
+      "#.###.#",
+      "#######",
+      "#######",
+      "......."
+    ],
+    "alvo": [
+      ".#####.",
+      "#.....#",
+      "#.###.#",
+      "#.#.#.#",
+      "#.###.#",
+      "#.....#",
+      ".#####."
+    ],
+    "presente": [
+      ".#...#.",
+      "..#.#..",
+      "#######",
+      "#..#..#",
+      "#######",
+      "#..#..#",
+      "#######"
+    ],
+    "escudo": [
+      "#######",
+      "#..#..#",
+      "#..#..#",
+      "#######",
+      ".#.#.#.",
+      "..#.#..",
+      "...#..."
+    ],
+    "castelo": [
+      "#.#.#.#",
+      "#######",
+      ".#...#.",
+      ".#.#.#.",
+      ".#.#.#.",
+      ".#####.",
+      "......."
+    ],
+    "broto": [
+      ".##.##.",
+      "#..#..#",
+      ".#.#.#.",
+      "...#...",
+      "...#...",
+      ".#####.",
+      "......."
+    ],
+    "montanha": [
+      ".......",
+      "...#...",
+      "..#.#..",
+      ".#...#.",
+      ".#.#.##",
+      "#.#.#.#",
+      "#######"
+    ],
+    "asas": [
+      ".......",
+      "#.....#",
+      "##...##",
+      "###.###",
+      ".#####.",
+      "..###..",
+      "...#..."
+    ]
+  }
 }

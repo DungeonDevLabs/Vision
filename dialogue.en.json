@@ -69,7 +69,10 @@
     "calculator": [
       "Time is the secret ingredient of compound interest.",
       "A little every month beats a lot once in a while.",
-      "Income tax drops with each deposit's age: patience pays."
+      "Income tax drops with each deposit's age: patience pays.",
+      "Passive income is money working for you. At 1% a month, R$ 100k pays R$ 1,000.",
+      "The math turns it around: what you want ÷ the monthly yield = what you need to have.",
+      "Reinvesting the payouts is the secret: what was earned also earns, and the time shrinks."
     ],
     "amortization": [
       "Price: fixed installment. SAC: installment that drops.",
@@ -90,6 +93,28 @@
       "Found a bug? Tell me on r/VisionDungeon.",
       "Got an idea for a dragon skin? I want to see it!",
       "Community tips show up down here."
+    ],
+    "fii_fixed": [
+      "Think of a REIT as rent landing every month, tax-free. Fixed income follows the CDI, but is taxed.",
+      "Here I put both in the same language: what each pays a month, after tax.",
+      "If the REIT pays less than the \"tie\", fixed income would earn more, without the share's ups and downs.",
+      "Past payouts don't promise the future: an empty building or a tenant who doesn't pay cuts the REIT.",
+      "Fixed income's tax drops with time: 22.5% up to 6 months, 15% after 2 years. That's why I ask how long.",
+      "LCI and LCA are tax-free too, like REITs for individuals. Compare tax-free with tax-free!"
+    ],
+    "magic_number": [
+      "Snowball: when one month's payout buys a new share by itself, out of nobody's pocket.",
+      "Like a tree that drops a new seed every month. The more trees, the faster the orchard grows.",
+      "The math is share price ÷ payout per share. A R$ 100 share paying R$ 1? That's 100 shares.",
+      "If the payout drops or the price rises, the number changes. Use it as a goal, not a promise.",
+      "Once the snowball rolls, each new share raises the payout, and the snowball speeds up."
+    ],
+    "price_ceiling": [
+      "A price ceiling is a limit: how much to pay for a stock so it still makes sense by one rule.",
+      "Bazin wanted 6% a year in dividends. If the company paid R$ 3 a share, he'd pay up to R$ 50.",
+      "Graham blended profit and book value: at most 15 times earnings and 1.5 times book value.",
+      "They're old, simple methods. They don't know the company's future: use them as a starting point.",
+      "Below the ceiling doesn't mean \"buy\", above doesn't mean \"sell\". It's a ruler, not an order."
     ]
   },
   "dragons": [
@@ -98,21 +123,39 @@
       "name": "Emerald",
       "howToUnlock": "Reach a goal",
       "unlock": "milestone:meta-\\d+-100",
-      "colors": {"l": "e", "d": "c", "h": "j", "p": "a", "q": "o"}
+      "colors": {
+        "l": "e",
+        "d": "c",
+        "h": "j",
+        "p": "a",
+        "q": "o"
+      }
     },
     {
       "id": "ruby",
       "name": "Ruby",
       "howToUnlock": "The treasure earns R$ 100 in total",
       "unlock": "milestone:acumulado-10000",
-      "colors": {"l": "f", "d": "u", "h": "v", "p": "a", "q": "o"}
+      "colors": {
+        "l": "f",
+        "d": "u",
+        "h": "v",
+        "p": "a",
+        "q": "o"
+      }
     },
     {
       "id": "ice",
       "name": "Ice",
       "howToUnlock": "The treasure earns R$ 1,000 in total",
       "unlock": "milestone:acumulado-100000",
-      "colors": {"l": "s", "d": "i", "h": "z", "p": "b", "q": "z"}
+      "colors": {
+        "l": "s",
+        "d": "i",
+        "h": "z",
+        "p": "b",
+        "q": "z"
+      }
     }
   ],
   "achievements": [
@@ -122,7 +165,9 @@
       "description": "Create your first chest",
       "kind": "baus",
       "value": 1,
-      "icon": "📦"
+      "icon": "📦",
+      "tier": "ferro",
+      "symbol": "bau"
     },
     {
       "id": "primeiras-moedas",
@@ -130,7 +175,9 @@
       "description": "The treasure earns R$ 10",
       "kind": "rendimento",
       "value": 1000,
-      "icon": "🪙"
+      "icon": "🪙",
+      "tier": "ferro",
+      "symbol": "moeda"
     },
     {
       "id": "cofre-cheio",
@@ -138,7 +185,9 @@
       "description": "Have 3 chests",
       "kind": "baus",
       "value": 3,
-      "icon": "🗝️"
+      "icon": "🗝️",
+      "tier": "bronze",
+      "symbol": "chave"
     },
     {
       "id": "constancia",
@@ -146,7 +195,9 @@
       "description": "Save 3 months in a row",
       "kind": "sequencia",
       "value": 3,
-      "icon": "🔥"
+      "icon": "🔥",
+      "tier": "bronze",
+      "symbol": "fogo"
     },
     {
       "id": "ano-de-ouro",
@@ -154,7 +205,9 @@
       "description": "Save 12 months in a row",
       "kind": "sequencia",
       "value": 12,
-      "icon": "🏅"
+      "icon": "🏅",
+      "tier": "ouro",
+      "symbol": "estrela"
     },
     {
       "id": "mil-reais",
@@ -162,7 +215,9 @@
       "description": "Have R$ 1,000 in the chests",
       "kind": "patrimonio",
       "value": 100000,
-      "icon": "💰"
+      "icon": "💰",
+      "tier": "bronze",
+      "symbol": "saco"
     },
     {
       "id": "dez-mil",
@@ -170,7 +225,9 @@
       "description": "Have R$ 10,000 in the chests",
       "kind": "patrimonio",
       "value": 1000000,
-      "icon": "🐉"
+      "icon": "🐉",
+      "tier": "prata",
+      "symbol": "dragao"
     },
     {
       "id": "cem-mil",
@@ -178,7 +235,9 @@
       "description": "Have R$ 100,000 in the chests",
       "kind": "patrimonio",
       "value": 10000000,
-      "icon": "👑"
+      "icon": "👑",
+      "tier": "ouro",
+      "symbol": "coroa"
     },
     {
       "id": "meta-batida",
@@ -186,7 +245,9 @@
       "description": "Reach a goal",
       "kind": "metas",
       "value": 1,
-      "icon": "🎯"
+      "icon": "🎯",
+      "tier": "bronze",
+      "symbol": "alvo"
     },
     {
       "id": "tres-metas",
@@ -194,15 +255,19 @@
       "description": "Reach 3 goals",
       "kind": "metas",
       "value": 3,
-      "icon": "🏹"
+      "icon": "🏹",
+      "tier": "prata",
+      "symbol": "alvo"
     },
     {
       "id": "desejo-realizado",
-      "name": "Wish granted",
-      "description": "Buy a wish with the yield alone",
+      "name": "Reward claimed",
+      "description": "Claim a reward gathered in a chest",
       "kind": "desejos",
       "value": 1,
-      "icon": "🎁"
+      "icon": "🎁",
+      "tier": "bronze",
+      "symbol": "presente"
     },
     {
       "id": "reserva-3",
@@ -210,7 +275,9 @@
       "description": "Emergency fund covers 3 months of fixed expenses",
       "kind": "reserva",
       "value": 3,
-      "icon": "🛡️"
+      "icon": "🛡️",
+      "tier": "prata",
+      "symbol": "escudo"
     },
     {
       "id": "reserva-6",
@@ -218,7 +285,9 @@
       "description": "Emergency fund covers 6 months of fixed expenses",
       "kind": "reserva",
       "value": 6,
-      "icon": "🏰"
+      "icon": "🏰",
+      "tier": "ouro",
+      "symbol": "castelo"
     },
     {
       "id": "liberdade-10",
@@ -226,7 +295,9 @@
       "description": "The yield pays 10% of fixed expenses",
       "kind": "liberdade",
       "value": 10,
-      "icon": "🌱"
+      "icon": "🌱",
+      "tier": "ferro",
+      "symbol": "broto"
     },
     {
       "id": "liberdade-50",
@@ -234,7 +305,9 @@
       "description": "The yield pays 50% of fixed expenses",
       "kind": "liberdade",
       "value": 50,
-      "icon": "⛰️"
+      "icon": "⛰️",
+      "tier": "prata",
+      "symbol": "montanha"
     },
     {
       "id": "liberdade-100",
@@ -242,7 +315,180 @@
       "description": "The yield pays all fixed expenses",
       "kind": "liberdade",
       "value": 100,
-      "icon": "🦅"
+      "icon": "🦅",
+      "tier": "ouro",
+      "symbol": "asas"
     }
-  ]
+  ],
+  "medalTiers": [
+    {
+      "id": "ferro",
+      "name": "Iron",
+      "main": "#8A8F98",
+      "light": "#C9CED6",
+      "dark": "#464B53",
+      "ribbon": "#5B6472"
+    },
+    {
+      "id": "bronze",
+      "name": "Bronze",
+      "main": "#C27A3A",
+      "light": "#EBAE72",
+      "dark": "#6E3D1A",
+      "ribbon": "#B0443A"
+    },
+    {
+      "id": "prata",
+      "name": "Silver",
+      "main": "#BCC5D0",
+      "light": "#F4F7FA",
+      "dark": "#68727F",
+      "ribbon": "#3D6FB8"
+    },
+    {
+      "id": "ouro",
+      "name": "Gold",
+      "main": "#F2B233",
+      "light": "#FFE68C",
+      "dark": "#94620C",
+      "ribbon": "#C8382E"
+    }
+  ],
+  "medalSymbols": {
+    "bau": [
+      ".......",
+      ".#####.",
+      "#.....#",
+      "###.###",
+      "#..#..#",
+      "#.....#",
+      "#######"
+    ],
+    "moeda": [
+      "..###..",
+      ".#...#.",
+      "#..#..#",
+      "#.###.#",
+      "#..#..#",
+      ".#...#.",
+      "..###.."
+    ],
+    "chave": [
+      ".......",
+      ".##....",
+      "#..####",
+      "#..#.#.",
+      ".##..#.",
+      ".......",
+      "......."
+    ],
+    "fogo": [
+      "...#...",
+      "..##...",
+      "..###..",
+      ".#.###.",
+      ".#..##.",
+      ".#...#.",
+      "..###.."
+    ],
+    "estrela": [
+      "...#...",
+      "...#...",
+      "#######",
+      ".#####.",
+      "..###..",
+      ".##.##.",
+      ".#...#."
+    ],
+    "saco": [
+      "..###..",
+      "...#...",
+      ".#####.",
+      "#..#..#",
+      "#.###.#",
+      "#..#..#",
+      ".#####."
+    ],
+    "dragao": [
+      "#...#..",
+      "##.##..",
+      ".####..",
+      ".#.###.",
+      ".#####.",
+      "...####",
+      ".....#."
+    ],
+    "coroa": [
+      ".......",
+      "#..#..#",
+      "##.#.##",
+      "#.###.#",
+      "#######",
+      "#######",
+      "......."
+    ],
+    "alvo": [
+      ".#####.",
+      "#.....#",
+      "#.###.#",
+      "#.#.#.#",
+      "#.###.#",
+      "#.....#",
+      ".#####."
+    ],
+    "presente": [
+      ".#...#.",
+      "..#.#..",
+      "#######",
+      "#..#..#",
+      "#######",
+      "#..#..#",
+      "#######"
+    ],
+    "escudo": [
+      "#######",
+      "#..#..#",
+      "#..#..#",
+      "#######",
+      ".#.#.#.",
+      "..#.#..",
+      "...#..."
+    ],
+    "castelo": [
+      "#.#.#.#",
+      "#######",
+      ".#...#.",
+      ".#.#.#.",
+      ".#.#.#.",
+      ".#####.",
+      "......."
+    ],
+    "broto": [
+      ".##.##.",
+      "#..#..#",
+      ".#.#.#.",
+      "...#...",
+      "...#...",
+      ".#####.",
+      "......."
+    ],
+    "montanha": [
+      ".......",
+      "...#...",
+      "..#.#..",
+      ".#...#.",
+      ".#.#.##",
+      "#.#.#.#",
+      "#######"
+    ],
+    "asas": [
+      ".......",
+      "#.....#",
+      "##...##",
+      "###.###",
+      ".#####.",
+      "..###..",
+      "...#..."
+    ]
+  }
 }
