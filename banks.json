@@ -6,6 +6,9 @@
         "regex": "(?i)^(?!.*(?:negad|recusad|n[aã]o aprovad|n[aã]o autorizad|estornad|cancelad|agendad)).*?compra de R\\$\\s?(?<valor>\\d{1,3}(?:\\.\\d{3})*,\\d{2}) aprovada em (?<loja>.+?)(?: para o cart[aã]o.*?)?[.!]?$"
       },
       {
+        "regex": "(?i)^(?!.*(?:negad|recusad|n[aã]o aprovad|n[aã]o autorizad|estornad|cancelad|agendad)).*?(?:comprar|compra de)\\s+R\\$\\s?(?<valor>\\d{1,3}(?:\\.\\d{3})*,\\d{2})\\s+em\\s+(?<loja>[^\\n,]+?)(?:\\.\\s|,|\\.?$)"
+      },
+      {
         "regex": "(?i)^(?!.*(?:negad|recusad|n[aã]o aprovad|n[aã]o autorizad|estornad|cancelad|agendad)).*?compra.*?R\\$\\s?(?<valor>\\d{1,3}(?:\\.\\d{3})*,\\d{2}).*?\\b(?:em|no|na)\\s+(?<loja>[^\\n,.]+?)(?:\\s+(?:para o|no) cart[aã]o.*?)?[.!]?$"
       },
       {
