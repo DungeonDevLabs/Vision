@@ -2,6 +2,8 @@
 
 **English** · [Português](#português)
 
+<img src="icon.png" width="96" alt="Vision app icon: a purple pixel-art dragon behind a stone wall">
+
 Personal finance app for Android with a pixel-art dragon that guards your treasure. This repo holds only the files the app reads from the internet; the app's code is **not** here.
 
 ## The dragons
